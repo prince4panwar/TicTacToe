@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@500&family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+}
+main{
+    height: 80vh;
+    width: 100vw;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.score-container{
+    font-size: 1vw;
+    /* letter-spacing: 10px; */
+    line-height: 3vw;
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 20vw;  */
+}
+.game h1{
+    margin-bottom: 15px;
+    /* border: 2px solid black; */
+    font-size: 4vw;
+}
+.game h2{
+    margin-bottom: 35px;
+    /* border: 2px solid black; */
+    font-size: 2vw;
+}
+.game-container{
+    /* width: 400px; 
+    height: 400px;  */
+    
+    display: grid;
+    font-size: 6vw;
+    /* margin-left: 20vw; */
+    /* border: 2px solid black; */
+    grid-template-columns: repeat(3, 8vw);
+    grid-template-rows: repeat(3, 8vw);
+    /* grid-template-rows: repeat(3, minmax(0, 1fr)); */
+}
+/* .row
+{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+     // grid-template-columns: 33.3% 33.3% 33.3%;  
+}  */
+
+.column{
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    /* width: 130px; 
+    height: 130px; */
+    align-items: center;
+    justify-content: center;
+    /* content-visibility:hidden; */
+}
+.column:hover{
+    /* border: 2px solid black; */
+    transition: all ease 0.5s;
+    background-color: rgb(205, 204, 204);
+}
+.top-border{
+    border-top: none;
+}
+.bottom-border{
+    border-bottom: none;
+}
+.border-right{
+    border-right: none;
+}
+.border-left{
+    border-left: none;
+}
+
+
+@media (max-width: 600px) {
+    .game h1{
+        margin-bottom: 40px;
+        /* border: 2px solid black; */
+        font-size: 14vw;
+    }
+    .game h2{
+        margin-bottom: 120px;
+        /* border: 2px solid black; */
+        font-size: 9vw;
+    }
+    .game-container{
+        /* width: 400px; 
+        height: 400px;  */
+        
+        display: grid;
+        font-size: 12vw;
+        font-weight: 900;
+        /* margin-left: 20vw; */
+        /* border: 2px solid black; */
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+        /* grid-template-rows: repeat(3, minmax(0, 1fr)); */
+    }
+}
