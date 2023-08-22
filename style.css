@@ -18,6 +18,9 @@ main{
     display: flex;
     align-items: center; 
     justify-content: center;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 .score-container{
     font-size: 1vw;
@@ -32,12 +35,12 @@ main{
     /* margin-left: 20vw;  */
 }
 .game h1{
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     /* border: 2px solid black; */
     font-size: 4vw;
 }
 .game h2{
-    margin-bottom: 35px;
+    margin-bottom: 85px;
     /* border: 2px solid black; */
     font-size: 2vw;
 }
@@ -105,7 +108,7 @@ main{
         height: 400px;  */
         
         display: grid;
-        font-size: 12vw;
+        font-size: 16vw;
         font-weight: 900;
         /* margin-left: 20vw; */
         /* border: 2px solid black; */
