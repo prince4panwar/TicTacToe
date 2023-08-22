@@ -116,4 +116,9 @@ main{
         grid-template-rows: repeat(3, 25vw);
         /* grid-template-rows: repeat(3, minmax(0, 1fr)); */
     }
+    .column:hover{
+        /* border: 2px solid black; */
+        transition: all ease 0.5s;
+        background-color: white;
+    }
 }
