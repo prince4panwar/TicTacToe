@@ -36,7 +36,10 @@ function playGame()
 
                     if(count>7 && !gameOver)
                     {
-                        document.querySelector("#js-turn").innerText = "Match Tie"
+                        document.querySelector("#js-turn").innerText = "Match Tie";
+
+                    
+                        setTimeout(() => { location.reload().innerText = ""}, 1500);
                     }
                     count++;
                      
@@ -62,9 +65,9 @@ function checkResult()
             
                         if((boxElement[em[0]].innerText === boxElement[em[1]].innerText) && (boxElement[em[1]].innerText === boxElement[em[2]].innerText) && boxElement[em[0]].innerText)
                         {
-                            console.log(flag +" win");
+                            console.log(flag +" Wonn");
                             gameOver = true;
-                            document.querySelector("#js-turn").innerText = `${flag} Win`
+                            document.querySelector("#js-turn").innerText = `${flag} Won`
 
                             stop();
                         }
@@ -79,6 +82,6 @@ function checkResult()
 playGame();
 
 let stop = ()=>{
-    setTimeout(() => { document.querySelector("#js-turn").innerText = `${flag} Win` }, 10);
-    setTimeout(() => { location.reload().innerText = `${flag} Win` }, 1500);
+    setTimeout(() => { document.querySelector("#js-turn").innerText = `${flag} Won` }, 10);
+    setTimeout(() => { location.reload().innerText = `${flag} Won` }, 1500);
 }
