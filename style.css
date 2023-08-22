@@ -109,8 +109,8 @@ main{
         font-weight: 900;
         /* margin-left: 20vw; */
         /* border: 2px solid black; */
-        grid-template-columns: repeat(3, 20vw);
-        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 25vw);
+        grid-template-rows: repeat(3, 25vw);
         /* grid-template-rows: repeat(3, minmax(0, 1fr)); */
     }
 }
